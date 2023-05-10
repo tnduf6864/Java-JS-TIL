@@ -1,4 +1,4 @@
-자바 클래스 분할, CRUD 기능 구현, 오라클DB접근
+자바 클래스 분할, CRUD 기능 구현, 오라클DB접속 및 CRUD
 
 <DB>
 CREATE TABLE product(
@@ -8,3 +8,5 @@ prod_price NUMBER(5)
 );
 
 INSERT INTO PRODUCT (prod_no, prod_name, prod_price) VALUES ('R0001', '냉장고', 10000);
+UPDATE product SET prod_name='참치' WHERE prod_no='R0004';
+DELETE product WHERE prod_no='R0002';
