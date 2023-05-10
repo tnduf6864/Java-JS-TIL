@@ -1,1 +1,10 @@
-자바 클래스 분할, CRUD 기능 구현, DB접근
+자바 클래스 분할, CRUD 기능 구현, 오라클DB접근
+
+<DB>
+CREATE TABLE product(
+prod_no VARCHAR2(10) PRIMARY KEY,
+prod_name VARCHAR2(50),
+prod_price NUMBER(5)
+);
+
+INSERT INTO PRODUCT (prod_no, prod_name, prod_price) VALUES ('R0001', '냉장고', 10000);
