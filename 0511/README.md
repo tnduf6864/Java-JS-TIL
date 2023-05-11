@@ -33,4 +33,5 @@
     stmt.executeQuery() - 조회할 때 만
     stmt.executeUpdate() - 조회를 제외한 추가, 삭제, 수정에서
     
-    차이: 
+    
+    try - catch - finally
