@@ -1,3 +1,6 @@
+javac -d d:\overview\myjava -cp d:overview\myjava d:\overview\myjava\Product*.java
+java -cp d:\lib\ojdbc6.jar;d:\overview\myjava    ProductUser
+
 <JDBC>
   1. JDCB 드라이버 로드
   2. DB연결
