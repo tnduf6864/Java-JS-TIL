@@ -38,3 +38,4 @@ java -cp d:\lib\ojdbc6.jar;d:\overview\myjava    ProductUser
     
     
     try - catch - finally
+    배열크기가 0인 배열 return시 문제 x 
