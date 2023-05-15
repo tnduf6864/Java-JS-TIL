@@ -29,4 +29,4 @@ JAVA SE - UI+network
 
 * 숫자입력받는 법
 
-     int month = Integer.parseInt(sc.nextLine());
+          int month = Integer.parseInt(sc.nextLine());
