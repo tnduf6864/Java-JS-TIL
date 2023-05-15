@@ -7,8 +7,8 @@ JAVA SE - UI+network
      ME - 안씀
 
 - 자바플랫폼의 구조
-> JDK = JRE(JVM + API) + 여러 응용프로그램(javac, java, ...)
-> JVM: 재해석기 + 메모리관리
+* JDK = JRE(JVM + API) + 여러 응용프로그램(javac, java, ...)
+* JVM: 재해석기 + 메모리관리
 
 <객체지향>
 - 객체를 기반으로 클래스의 재사용성을 높히는 프로그램
