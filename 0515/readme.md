@@ -1,7 +1,7 @@
 # 자바플랫폼 
 자바App이 실행될 수 있는 환경
 
-- 종류>
+- 종류
 JAVA SE - UI+network
      EE - 기업형 자바App
      ME - 안씀
@@ -25,8 +25,12 @@ JAVA SE - UI+network
 # 연산자
 논리연산자 &와 &&의 차이점
 & <~ 흐름대로 다 읽음 (b++같은 거 다 읽으면서 실행)
-&& <~ 거짓이 나오면 더 안읽음
+&& <~ 거짓이 나오면 더 안읽음, 성능 향상을 위해서 쓰면 효율적임
 
-* 숫자입력받는 법
++ 숫자입력받는 법
 
           int month = Integer.parseInt(sc.nextLine());
+
+- 난수
+      
+      rand = (int)(Math.random() * 3) + 1;
