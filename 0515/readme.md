@@ -1,12 +1,12 @@
 # 자바플랫폼 
 자바App이 실행될 수 있는 환경
 
-<종류>
+- 종류>
 JAVA SE - UI+network
      EE - 기업형 자바App
      ME - 안씀
 
-<자바플랫폼의 구조>
+- 자바플랫폼의 구조
 - JDK = JRE(JVM + API) + 여러 응용프로그램(javac, java, ...)
 - JVM: 재해석기 + 메모리관리
 
