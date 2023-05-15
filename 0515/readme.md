@@ -27,5 +27,6 @@ JAVA SE - UI+network
 & <~ 흐름대로 다 읽음 (b++같은 거 다 읽으면서 실행)
 && <~ 거짓이 나오면 더 안읽음
 
-  *숫자입력받는 법
+*숫자입력받는 법
+
      int month = Integer.parseInt(sc.nextLine());
