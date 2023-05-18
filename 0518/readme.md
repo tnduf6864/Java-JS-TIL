@@ -6,3 +6,11 @@
     numArr[0] = new int [2];
 		numArr[1] = new int [5];
 		numArr[2] = new int [3];
+
+- 주석 설명
+
+		/**
+	 	*   마우스 커서 올리면 설명 나옴
+	 	*/
+		
+- 
