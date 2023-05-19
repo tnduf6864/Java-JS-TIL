@@ -50,5 +50,27 @@ null선언과 길이를 0 또는 데이터를 입력하지 않는것은 다름
   str = "Hello"와 str = new String("Hello")는 다름
   (... = "Hello)"와 같은 방식으로 만든 다른 변수끼리는 같은 메모리를 참조함 
   
+- 문자열 잘라내기
+  substring(int beginindex)
+  
+- 문자열 찾기
+  변수명.indexof("찾을문자열"); (없으면 -1)
+  
+- 문자열 분리
+  + Split 
+  String[] arr = string변수명.split("구분문자");
+  형변환을 통해 int[]에 저장 불가 두 번에 걸쳐 해야해
+  
+  50::30 (:로 구분) 과 같이 구분자 사이에 공백도 가능
+  
+  + String Tokenizer
+    토큰이란 분리가능한 데이터조각 (\t, \n 같은 것들은 미포함) - Split은 count함
+    st.hasMoreTokens()로 존재하는지 판별 가능
+    String s = st.nextToken(); 이런식으로 데이터 가져옴
+      
+- 
+  
+  
+  
 # 배열
   
