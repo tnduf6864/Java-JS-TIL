@@ -40,3 +40,15 @@ Garbage Collection(GC)에 의해 사용되지 않는 객체는 자동으로 해�
 # 변수
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/58e7352f-50c1-4b4b-bc6a-abf4da00915b)
 
+# null
+null선언과 길이를 0 또는 데이터를 입력하지 않는것은 다름
+- 후자는 객체는 만들었기 떄문에 heap 영역에 데이터 존재
+  int[] var = null;은 배열 자체가 할당되지 않은 상태이며, int[] var = new int[0];은 비어있는 배열이 할당된 상태
+
+# String
+- new 생략 가능 하지만
+  str = "Hello"와 str = new String("Hello")는 다름
+  (... = "Hello)"와 같은 방식으로 만든 다른 변수끼리는 같은 메모리를 참조함 
+  
+# 배열
+  
