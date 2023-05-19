@@ -68,9 +68,3 @@ null선언과 길이를 0 또는 데이터를 입력하지 않는것은 다름
     st.hasMoreTokens()로 존재하는지 판별 가능
     String s = st.nextToken(); 이런식으로 데이터 가져옴
       
-- 
-  
-  
-  
-# 배열
-  
