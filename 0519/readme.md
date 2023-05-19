@@ -1,12 +1,24 @@
 # 자바 실행 과정
 
-1. LottoUser.class 찾기 String.class찾기 Lotto.class찾기
-2. LottoUser.class, String, Lotto..파일을 JVM에 로드 
-3. 바이트 코드 검증
-4. 인터프리트(바이트 -> 바이너리)
-5. 인터프리트된  파일내용은 Method에 기억됨
-6. static변수들 자동초기화
-7. main()자동호출됨
+1. LottoUser.class, String.class, Lotto.class 찾기:
+  자바 파일(.java)을 컴파일하면 바이트 코드(.class)로 변환됩니다. 이때 LottoUser 클래스, String 클래스, Lotto 클래스의 바이트 코드 파일(.class)을 찾습니다.
+  파일을 JVM에 로드:
+2. JVM(Java Virtual Machine)은 자바 프로그램을 실행하는 가상 머신입니다. JVM은 LottoUser.class, String.class, Lotto.class 파일을 로드하여 실행 준비를 합니다.
+
+3. 바이트 코드 검증:
+   JVM은 로드한 바이트 코드를 검증합니다. 바이트 코드의 구문 및 유효성을 확인하여 실행 중에 오류가 발생하지 않도록 합니다.
+  
+4. 인터프리트(바이트 코드 -> 바이너리):
+  검증된 바이트 코드는 JVM에 의해 인터프리트되어 기계어에 가까운 중간 형식으로 변환됩니다. 이 과정에서 바이트 코드가 하나씩 읽혀지며 실행됩니다.
+  인터프리트된 파일 내용은 Method에 기억됨:
+
+5. 인터프리트된 바이트 코드의 내용은 JVM의 메소드 영역에 기억됩니다. 클래스, 메소드, 변수 등의 정보가 저장되어 실행 중에 필요한 정보에 접근할 수 있습니다.
+   static 변수들 자동 초기화: 
+
+6. JVM은 static 변수들을 자동으로 초기화합니다. static 변수는 클래스 수준에서 한 번만 초기화되며, 인스턴스 생성과는 관계없이 사용됩니다.
+
+7. main() 자동 호출됨:
+   main() 메소드는 자바 프로그램의 진입점입니다. JVM은 main() 메소드를 자동으로 호출하여 프로그램의 실행을 시작합니다.
 
 # 스택과 힙
 - 스택(Stack):
@@ -22,4 +34,9 @@
 힙의 크기는 시스템의 가용 메모리 크기에 따라 동적으로 조정됩니다.
 Garbage Collection(GC)에 의해 사용되지 않는 객체는 자동으로 해제되어 메모리 공간을 회수합니다.
 
+# lottoUser.java의 데이터 구조
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/27105a35-cf0b-42b1-b3c4-dda8f2e385f2)
+
+# 변수
+![image](https://github.com/tnduf6864/TIL/assets/66365553/58e7352f-50c1-4b4b-bc6a-abf4da00915b)
+
