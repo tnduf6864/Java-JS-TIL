@@ -13,6 +13,7 @@
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/8e5cd549-6131-4dc7-a578-1ccc3d2c544a)
 
 
-쓰레드
-
+- 상대경로, 절대경로
+- 예외처리 (catch) 부모exception, 자식 exception 순서
+- 
 
