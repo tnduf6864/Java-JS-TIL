@@ -1,5 +1,5 @@
 - for each
-- 
+
 # 프로그램 입출력
 - Inputstream()은 추상클래스라 객체생성 안돼
 - Inputstream끼리 강제 형변환이 불가 (reader, inputStream)
