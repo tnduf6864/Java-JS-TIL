@@ -7,3 +7,5 @@ this.notify() - wait된 걸 깨워
 
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/8f0a4886-ee15-459d-bd74-8fd9ec4e86f0)
 
+
+<네트워크>
