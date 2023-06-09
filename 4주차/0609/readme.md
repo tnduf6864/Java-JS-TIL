@@ -8,4 +8,8 @@ this.notify() - wait된 걸 깨워
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/8f0a4886-ee15-459d-bd74-8fd9ec4e86f0)
 
 
+패키지에 있는 자바파일 실행
+java -cp bin 패키지명.자바파일명
+
 <네트워크>
+
