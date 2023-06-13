@@ -25,3 +25,7 @@ RDBMS - 테이블끼리 관계를 맺고있는 관계형DBMS
 
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/7361b687-2c5c-4ab4-8d53-a50e8f7dcc86)
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/5bf04c41-eed9-4809-a979-71e4d2fc62f0)
+
+
+별칭 정할 때
+소문자 or 띄어쓰기 쓰고싶음 " " 안에 이름넣어
