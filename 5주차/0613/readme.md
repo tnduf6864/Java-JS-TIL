@@ -34,3 +34,16 @@ RDBMS - 테이블끼리 관계를 맺고있는 관계형DBMS
 
 null 은 비교연산자 =, <>에 포함되지않음
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/41d0fbca-99d6-4ead-bd07-da12ae2ba13b)
+
+SELECT employee_id    AS 사번, 
+       salary         AS 급여,
+       department_id  AS 부서번호 
+FROM employees 
+WHERE (salary between 10000 AND 20000) AND department_id  In (10, 50, 90);
+
+-in, between을 써서 하는 것이 처리속도방면에서 효율적일 수 있다.
+
+- ORDER BY 별칭; 가능
+- ORDER BY (3); 3번째 속성기준으로 (index사용)
+- 출력하지 않는 컬럼을 정렬대상으로도 설정 가능
+
