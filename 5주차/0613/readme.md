@@ -30,3 +30,7 @@ RDBMS - 테이블끼리 관계를 맺고있는 관계형DBMS
 +별칭 정할 때
 - 소문자 or 띄어쓰기 쓰고싶음 " " 안에 이름넣어 
 - AS 이름으로 가능
+![image](https://github.com/tnduf6864/TIL/assets/66365553/99efaac7-484b-4e39-88d8-4c63de92fc71)
+
+null 은 비교연산자 =, <>에 포함되지않음
+![image](https://github.com/tnduf6864/TIL/assets/66365553/41d0fbca-99d6-4ead-bd07-da12ae2ba13b)
