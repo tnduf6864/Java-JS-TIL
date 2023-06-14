@@ -22,9 +22,63 @@
                   
                   +) REPLACE('JACK AND JUE', 'J', 'BL') -> BLACK AND BLUE
                   +) TRANSLATE('JACK AND JUE', 'J', 'BL') -> BACK AND BUE
-                  
-    - 
+                  0
+0    -  이름에 'E', 'e'가 있는 사람들 조회
+    
+            SELECT employee_id, first_name FROM employees
+            WHERE (INSTR(UPPER(first_name), 'E') <> 0);
+            
+    + LIKE연산자(느림) - WHERE LOWER(first_name) LIKE '%e%';
+    EX) 이름이 J로 시작, n을 포함한 ...
+      SELECT employee_id, first_name FROM employees
+      WHERE first_name LIKE '%J%n' 
+    EX) 11월 어쩌구..
+     WHERE hire_date LIKE '__/11/__' 
       
 
-2. 여러행 함수
+        SELECT employee_id AS 사번, 
+        salary AS 급여, 
+        ROUND((salary + salary *NVL(commission_pct, 0.0)), -1) AS 실급여
+        FROM employees 
+        WHERE ROUND(salary + salary * NVL(commission_pct, 0.0), -1) < 10000 
+        ORDER BY 실급여 DESC;
+        
+  + 날짜형 함수
+     -  날짜용 연산자: 날짜±숫자, 날짜±날짜(일수 반환)
+     -  SYSDATE, MONTHS_BEETWEEN(), ADD_MONTHS(), NEXT_DAY(SYSDATE, '월') -> 가장 가까운 월요일 날짜
+       
+  + 형변환함수
+    - 문자형<->숫자형 TO_NUMBER(), TO_CHAR()
+    - 문자형<->날짜형 TO_DATE(), TO_CHAR()
+    - 자동 형변환 EX) SELECT '1' || 2 FROM DUAL; SELECT '1' + 2 FROM DUAL; WHERE hire_date >= '08/01/01'; (문자형->날짜형 자동 형변환)
 
+          SELECT SYSDATE, TO_CHAR(SYSDATE, 'YYYYMMDD HH:MI:SS')FROM dual;
+          SELECT 12345.678, TO_CHAR(12345.678, '9,999.0000') FROM dual; 뒤에게 더 작으면 ####으로뜸!
+          SELECT 12345.678, TO_CHAR(12345.678, '9,999,999.0') FROM dual; -> 소숫점 반올림 12345.7
+     
+   + 조건함수
+     -NULLIF
+     -decode 삼항연산자 친구
+     -CASE 
+      EX) SELECT employee_id, manager_id, CASE manager_id
+          WHEN IS NULL THEN '관리자없음' END
+          FROM employees;
+          
+         SELECT employee_id, salary, 
+         CASE 
+            WHEN (salary >= 15000) THEN 'A'
+            WHEN (salary >= 10000) THEN 'B'
+            WHEN (salary >= 5000 ) THEN 'C'
+            ELSE 'D'
+         END AS 급여등급
+         FROM employees;
+         
+2. 여러행 함수
+  - sum(), count(), AVG(), MAX(), MIN()
+
+        SELECT TO_CHAR(hire_date, 'YYYY') AS "입사년도", count(*)
+        FROM employees
+        GROUP BY TO_CHAR(hire_date, 'YYYY')
+        ORDER BY 입사년도;
+
+  - 
