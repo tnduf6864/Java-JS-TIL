@@ -28,3 +28,6 @@
                 FROM countries LEFT JOIN locations USING (country_id);
 (LEFT, RIGHT의 기준이 되는 것이 기준테이블. 위의 예제에선 countries)
   
+- 둘 다 없어도 출력하도록 하는 JOIN (FULL JOIN)
+
+- SELF JOIN (자기자신 JOIN)
