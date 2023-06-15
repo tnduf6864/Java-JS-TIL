@@ -26,8 +26,16 @@
                     country_name AS 국가이름,
                     locations.city AS 도시명
                 FROM countries LEFT JOIN locations USING (country_id);
-(LEFT, RIGHT의 기준이 되는 것이 기준테이블. 위의 예제에선 countries)
+(LEFT, RIGHT의 기준이 되는 것이 기준테이블. 위의 예제에선 countries가 기준)
   
 - 둘 다 없어도 출력하도록 하는 JOIN (FULL JOIN)
 
-- SELF JOIN (자기자신 JOIN)
+- SELF JOIN (자기자신 JOIN) 한 테이블의 정보를 다른 테이블로 보는 것 처럼 하는 방법
+
+                SELECT 
+                    e.employee_id AS 사번,
+                    e.first_name  AS 이름,
+                    e.manager_id  AS 관리자번호,
+                    m.first_name  AS 관리자이름
+                FROM employees e JOIN employees m
+                ON(e.manager_id = m.employee_id)
