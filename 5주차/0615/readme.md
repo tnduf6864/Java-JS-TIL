@@ -2,5 +2,19 @@
 - GROUP BY에서 사용한 컬럼만 여러행 함수로 SELECT에서 사용 가능
 - ANSI JOIN
 
-        SELECT employee_id, department_name
-        FROM employees JOIN departments ON (Employees.manager_id = Departments.manager_id);
+        SELECT ... FROM 테이블1 JOIN 테이블2 ON(테이블1.컬럼 = 테이블2.컬럼)
+        SELECT ... FROM 테이블1 NATURAL JOIN 테이블2
+        SELECT ... FROM 테이블1 JOIN 테이블2 USING 컬럼
+
+- 별칭 주는 법 (별칭을 줬으면 테이블명으로 쓰면 안돼요)
+
+        SELECT 
+            e.employee_id           AS 사번, 
+            e.first_name            AS 이름,
+            e.department_id         AS 부서번호, 
+            d.department_name     AS 부서명,
+            e.job_id                AS 직무번호, 
+            j.job_title                  AS 직무명
+        FROM employees e
+        JOIN departments d ON (e.Department_id = d.department_id)
+        JOIN jobs j        ON (e.job_id = j.job_id); 
