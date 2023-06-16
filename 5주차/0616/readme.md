@@ -25,4 +25,17 @@
             FROM employees
             GROUP BY department_id);
 
+  -ANY(OR), ALL(AND)
+  -InlineView
+
+
+  --입사일자가 '07/01/01'이후 입사한 사원의 정보를 출력하시오
+
+    SELECT rownum, employee_id, hire_date, salary
+    FROM
+        (SELECT employee_id, hire_date, salary
+        FROM employees
+        WHERE hire_date >= '07/01/01'
+        ORDER BY salary)
+    WHERE rownum <= 5;
   
