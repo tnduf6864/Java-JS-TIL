@@ -39,4 +39,14 @@
             ORDER BY salary)
         WHERE rownum <= 5;
 
-  
+      rownum between 6 and 10으로 하면 아무것도 안나와 (where에서 조건에 맞지않아서  rownum이 안됨)
+
+            SELECT rn, employee_id, hire_date, salary
+            FROM
+                (SELECT rownum AS rn, employee_id, hire_date, salary
+                 FROM
+                    (SELECT employee_id, hire_date, salary
+                    FROM employees
+                    WHERE hire_date >= '07/01/01'
+                    ORDER BY salary))        
+            WHERE rn between 6 AND 10;
