@@ -40,7 +40,7 @@
         WHERE rownum <= 5;
 
 
-      rownum between 6 and 10으로 하면 아무것도 안나와 (where에서 조건에 맞지않아서  rownum이 안됨)
+      - rownum between 6 and 10으로 하면 아무것도 안나와 (where에서 조건에 맞지않아서  rownum이 안됨)
 
             SELECT rn, employee_id, hire_date, salary
             FROM
@@ -53,7 +53,7 @@
             WHERE rn between 6 AND 10;
 
 
-      FROM에 이름달기
+      - FROM에 이름달기
 
 
             --입사일자가 '07/01/01'이후 입사한 사원의 정보를 출력하시오
@@ -67,3 +67,18 @@
                     ORDER BY salary) a
                 )        
             WHERE rn BETWEEN 6 AND 10;
+
+
+- Scalar Subquery
+    -- 사원의 사번, 이름, 부서번호, 부서명을 출력하시오
+  
+      SELECT employee_id, first_name, d.department_id, department_name
+      FROM employee e JOIN departments d ON (e.department_id = d.department_id)
+
+      SELECT employee_id, first_name, department_id,
+          (SELECT department_name
+          FROM departments
+          WHERE department_id = employees.department_id)
+      FROM employees;
+
+
