@@ -81,4 +81,28 @@
           WHERE department_id = employees.department_id)
       FROM employees;
 
+//SELECT
 
+- DDL
+- 무결성 제약조건
+  1. NOT NULL
+  2. UNIQUE
+  3. PRIMARY KEY: NOT NULL + UNIQUE
+  4. CHECK (특정 값의 범위)
+  5. FOREIGN KEY
+ 
+  (1) 테이블 레벨로 설정
+  
+          CREATE TABLE t_a(c_a number(5) default 0,
+            c_b varchar2(10),
+            constraint c_a_pk PRIMARY KEY(c_a),
+            constarint c_b_ck CHECK (c_b IN ('남', '여'))
+          );
+
+
+  (2) 컬럼 레벨로 설정
+
+          CREATE TABLE t_a(c_a number(5) default 0 constraint c_a_pk PRIMARY KEY,
+                          c_b varchar2(10) constraint c_b_ck CHECK (c_b IN ('남', '여'))
+          );
+  
