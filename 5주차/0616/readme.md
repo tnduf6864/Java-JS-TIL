@@ -105,4 +105,14 @@
           CREATE TABLE t_a(c_a number(5) default 0 constraint c_a_pk PRIMARY KEY,
                           c_b varchar2(10) constraint c_b_ck CHECK (c_b IN ('남', '여'))
           );
+
+  (3) 테이블 레벨로 추가
+
+          ALTER TABLE product
+          ADD CONSTRAINT prod_no_pk PRIMARY KEY(prod_no);
   
+  (4) 컬럼 레벨로 추가
+  
+          ALTER TABLE product
+          MODIFY prod_name CONSTRAINT prod_name_nn NOT NULL;        
+    
