@@ -39,6 +39,7 @@
             ORDER BY salary)
         WHERE rownum <= 5;
 
+
       rownum between 6 and 10으로 하면 아무것도 안나와 (where에서 조건에 맞지않아서  rownum이 안됨)
 
             SELECT rn, employee_id, hire_date, salary
@@ -50,3 +51,19 @@
                     WHERE hire_date >= '07/01/01'
                     ORDER BY salary))        
             WHERE rn between 6 AND 10;
+
+
+      FROM에 이름달기
+
+
+            --입사일자가 '07/01/01'이후 입사한 사원의 정보를 출력하시오
+            SELECT *
+            FROM
+                (SELECT rownum AS rn, a.*
+                 FROM (
+                    SELECT employee_id, hire_date, salary
+                    FROM employees
+                    WHERE hire_date >= '07/01/01'
+                    ORDER BY salary) a
+                )        
+            WHERE rn BETWEEN 6 AND 10;
