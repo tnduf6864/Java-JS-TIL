@@ -1,0 +1,51 @@
+1. 급여가 10000 이상인 사원의 사번, 부서번호, 이름, 급여, 수당을 출력하시오.단, 부서번호가
+  30 번,60 번, 90 번인 부서는 제외하고 사원을 검색한다
+
+SELECT 
+    employee_id AS 사번,
+    department_id AS 부서번호,
+    first_name AS 사원,
+    salary AS 급여,
+    commission_pct AS 수당
+FROM Employees
+WHERE department_id NOT IN(30, 60, 90);
+
+2.급여가 4000 보다 많은 사원들의 부서별 급여평균를 출력하시오. 단 급여평균은 소숫점이하 2 자리에서 반올림(소숫점이하1자리까지 표현)한다
+
+SELECT 
+    department_id "부서", 
+    ROUND(AVG(salary),1) AS "부서별 급여평균"
+FROM employees
+WHERE salary > 4000
+GROUP BY department_id
+
+3. 부서배치를 받지 않은 사원은 제외하고 급여평균이 10000 이상인 부서별 급여평균을 출력하시오.
+
+SELECT department_id AS 부서, ROUND(AVG(salary), 1) AS "부서별 급여평균"
+FROM employees
+WHERE department_id IS NOT NULL
+GROUP BY department_id
+HAVING AVG(salary) >= 10000;
+
+4. 'Seattle', 'Toronto'도시에 근무하는 사원들의 근무도시명,사번, 이름, 부서 ID, 부서명 을 출력하시오
+
+SELECT 
+    city AS 근무도시명,
+    employee_id AS 사번,
+    department_id AS "부서 ID",
+    department_name AS 부서명
+FROM departments d 
+JOIN Employees e USING (department_id)
+JOIN Locations   l USING (location_id)
+WHERE city in ('seattle', 'Toronto')
+
+5. 성(last_name)이 'Davies'인 사원과 같은 부서에 근무하는 사원들의 사번, 성, 이름을 출력하시오
+
+SELECT 
+    e1.employee_id AS 사번,
+    e1.last_name AS 성,
+    e1. first_name AS 이름
+FROM Employees e1
+JOIN Employees e2 ON (e1.department_id = e2.department_id)
+WHERE e2.last_name = 'Davies' 
+-- AND e1.last_name <> 'Davies';
