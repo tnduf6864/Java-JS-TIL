@@ -18,9 +18,9 @@
 
     WHERE 여러 개 매치해줘야됨
 
-    SELECT department_id, employee_id, first_name, salary
-    FROM employees
-    WHERE (department_id, salary) IN
+        SELECT department_id, employee_id, first_name, salary
+        FROM employees
+        WHERE (department_id, salary) IN
             (SELECT department_id, MAX(salary)
             FROM employees
             GROUP BY department_id);
