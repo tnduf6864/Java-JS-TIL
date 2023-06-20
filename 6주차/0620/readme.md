@@ -6,5 +6,8 @@
 
 ROLLBACK~
 
-<JDBC>
+!JDBC
+
+- pstmt는 Statment로 업캐스팅 가능
+- executeUpdate - INSERT, UPDATE, DELETE +  DDL (실행된 갯수 만큼 값을 리턴)
 
