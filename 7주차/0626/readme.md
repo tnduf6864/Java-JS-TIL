@@ -7,3 +7,7 @@
   - Doctype
   - alt 속성 활용
   - 
+
++ <table>
+  - tr, td
+  - thead, tbody, tfoot  
