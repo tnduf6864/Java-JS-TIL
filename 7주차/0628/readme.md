@@ -8,3 +8,5 @@
 
 back과 front를 나눠서 진행(보안문제 등...)
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/e32cf882-0cdc-40ff-8655-37fd567eb19b)
+
+div태그보단 시멘틱태그로 사용하면 태그만보고 무엇인지 알 수 있음
