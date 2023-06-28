@@ -2,4 +2,4 @@
 + method가 안적혀있으면 get방식으로 전송
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/0ad2a917-d3e6-4ae1-9d4c-31aa1aff0ea8)
 
-back과 front를 나눠서 한다
+back과 front를 나눠서 진행(보안문제 등...)
