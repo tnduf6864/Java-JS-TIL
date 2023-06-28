@@ -1,1 +1,1 @@
-- form method- post와 get방식의 차이
++ form method- post와 get방식의 차이
