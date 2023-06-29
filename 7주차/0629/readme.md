@@ -1,3 +1,5 @@
+- name 속성: 서버로 전송하는 값
+
 - symmentic태그
 https://velog.io/@gil0127/Semantic-Tag-%EC%A0%95%EB%A6%AC
 
