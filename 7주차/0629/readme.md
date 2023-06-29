@@ -16,3 +16,5 @@ https://gorokke.tistory.com/61
 -  element 셀렉터: 태그이름을 직접!
 -  id 셀럭터(#): 특정 id만
 -  클래스 셀럭터(.): class지정
+
++ id속성은 하나에만 적용되니깐 id가 겹치면 안됨!
