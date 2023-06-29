@@ -47,5 +47,6 @@ https://gorokke.tistory.com/61
 
 - block 요소는 수직중앙 정렬하려면 vertical-align 불가능
 - ![image](https://github.com/tnduf6864/TIL/assets/66365553/a5e7ecf1-b34b-4260-829d-3c6516688b51)
-- 
+ 
 
+- inline은 w,h 크기 영향 x -> 컨텐트크기로 총 크기가 적용 됨.
