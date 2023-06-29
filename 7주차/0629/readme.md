@@ -36,5 +36,10 @@ https://gorokke.tistory.com/61
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/3f60c33d-751e-4114-9079-ad28e5bffbe7)
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/68d8a406-5fc3-4def-9d39-ae464339d45e)
 
-노랑이: 300+25+25+5+5 = 360
-파랑이: 300, content크기  300 - (25+25+5+5) = 240
+  -노랑이: 300+25+25+5+5 = 360
+  -파랑이: 300, content크기  300 - (25+25+5+5) = 240
+
+-1em = 16px -> 0.5em = 8px
+
+- font-size % 적용
+  - em은 적용 되지만, px는 고정크기!
