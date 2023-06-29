@@ -19,5 +19,6 @@ https://gorokke.tistory.com/61
 
 + id속성은 하나에만 적용되니깐 id가 겹치면 안됨!
 
-+ combinator
++ combinator ★
   https://www.w3schools.com/css/css_combinators.asp
+  - 특정 태그 앞에 나오는 것들에 style주기는 힘듬
