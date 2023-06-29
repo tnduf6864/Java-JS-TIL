@@ -43,3 +43,4 @@ https://gorokke.tistory.com/61
 
 - font-size % 적용
   - em은 적용 되지만, px는 고정크기!
+- table의 height %는 상위태그의 크기가 지정돼야 가능
