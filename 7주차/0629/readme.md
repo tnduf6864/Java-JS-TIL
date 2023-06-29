@@ -25,3 +25,9 @@ https://gorokke.tistory.com/61
 + display <-> visibility
   - display: none;        : 영역 유지 x
   - visibility: hidden;   : 영역은 유지
+
++ blank <-> top
+  - blank: 새 탭에서
+  - top: 해당 탭에서
+
++ id선택자가 class보다 우선!
