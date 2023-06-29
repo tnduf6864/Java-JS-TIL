@@ -45,7 +45,7 @@ https://gorokke.tistory.com/61
   - em은 적용 되지만, px는 고정크기!
 - table의 height %는 상위태그의 크기가 지정돼야 가능
 
-- 인라인 태그는 수직중앙 정렬하려면 vertical-align 불가능
+- block 요소는 수직중앙 정렬하려면 vertical-align 불가능
 - ![image](https://github.com/tnduf6864/TIL/assets/66365553/a5e7ecf1-b34b-4260-829d-3c6516688b51)
 - 
 
