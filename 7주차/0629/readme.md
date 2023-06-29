@@ -22,5 +22,6 @@ https://gorokke.tistory.com/61
 + combinator ★
   https://www.w3schools.com/css/css_combinators.asp
   - 특정 태그 앞에 나오는 것들에 style주기는 힘듬
-- display: none;        : 영역 유지 x
-- visibility: hidden;   : 영역은 유지
++ display <-> visibility
+  - display: none;        : 영역 유지 x
+  - visibility: hidden;   : 영역은 유지
