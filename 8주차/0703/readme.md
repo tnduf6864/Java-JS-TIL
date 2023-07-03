@@ -36,6 +36,8 @@
       f4(function() {
           console.log('콜백함수');
       });
+  
+![image](https://github.com/tnduf6864/TIL/assets/66365553/d4882dc6-662b-45d6-952b-a521b4fb5c08)
 
 
-      
+
