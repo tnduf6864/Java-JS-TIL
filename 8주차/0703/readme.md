@@ -11,3 +11,6 @@
       //spread
       var arr3 = [...arr, ...arr2]
 
+      arr4.forEach((value, index, arr)=> {
+          //어쩌구
+      })
