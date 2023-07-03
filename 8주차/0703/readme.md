@@ -36,3 +36,6 @@
       f4(function() {
           console.log('콜백함수');
       });
+
+
+      
