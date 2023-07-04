@@ -9,3 +9,6 @@
 
 
 https://www.w3schools.com/js/js_htmldom.asp
+
+![image](https://github.com/tnduf6864/TIL/assets/66365553/f3308052-d81d-470e-ba7f-a07608b74200)
+![image](https://github.com/tnduf6864/TIL/assets/66365553/8385c61d-b541-4b5a-958f-7ad55a21cb3a)
