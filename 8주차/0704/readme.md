@@ -19,8 +19,7 @@ https://www.w3schools.com/js/js_htmldom_navigation.asp
 ![image](https://github.com/tnduf6864/TIL/assets/66365553/dc5cafc3-d617-4a7c-8e28-0dfceed3001b)
 
 - \[이름(nodeName) / 값(nodeValue)]
-  -  엘리먼트 노드:   이름
+  -  엘리먼트 노드:   이름(태그이름)
   -  텍스트 노드:     값
   -  Attribute:      이름 + 값
 
-node
