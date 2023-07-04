@@ -6,3 +6,6 @@
 - 상하, 좌우 정렬
   align-items: center; 
   justify-content: center; /* 수평 가운데 정렬 */
+
+
+https://www.w3schools.com/js/js_htmldom.asp
