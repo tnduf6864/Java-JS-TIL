@@ -24,6 +24,6 @@ DOM nodeType
 - form의 버튼을 눌러서 페이지를 요청하는 것이 아니기 때문에 그것처럼 만들어주기위해서 헤더를 설정해줌
 
 - window의 load (DOM을 완성하고 이미지 등 화면에 다 보여줄 준비가 됐을 때)
-- DOMContentLoaded(DOM 완성까지) = $(document).ready( ()=> {} )  ->  $( ()=>{ })
+- DOMContentLoaded(DOM 완성까지) = \$(document).ready( ()=> {} )  ->  \$( ()=>{ })
 - JQuery에서 후자의 이벤트만 처리.
   
