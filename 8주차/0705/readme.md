@@ -12,4 +12,5 @@ DOM nodeType
     - 예) 100km/s의 자동차 -> 렌더링을 초기화하고 추가하는 거 보다 수정하는 것이 더 자원상 좋음
     - 
 
-- CORS 동일출처원칙(Soruce Origin Policy)  어쩌구... (front, back 서버가 달라서?) 
+- CORS ERROR
+    - 동일출처원칙(Soruce Origin Policy)  어쩌구... (front, back 서버가 달라서?) 
