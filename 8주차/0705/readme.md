@@ -20,3 +20,5 @@ DOM nodeType
         - 1. 하나의 포트번호에 프론트 백 다 넣어 (비추)
           2. 서버에서 허용처리
 
+- xhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+- form의 버튼을 눌러서 페이지를 요청하는 것이 아니기 때문에 그것처럼 만들어주기위해서 헤더를 설정해줌
