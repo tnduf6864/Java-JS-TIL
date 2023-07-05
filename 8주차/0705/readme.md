@@ -13,4 +13,7 @@ DOM nodeType
     - 
 
 - CORS ERROR
-    - 동일출처원칙(Soruce Origin Policy)  어쩌구... (front, back 서버가 달라서?) 
+    - 동일출처원칙(Soruce Origin Policy)  어쩌구... (front, back 포트번호 달라서?) 
+    - 해결 방법:
+        - 1. 하나의 포트번호에 프론트 백 다 넣어 (비추)
+          2. 서버에서 허용처리
