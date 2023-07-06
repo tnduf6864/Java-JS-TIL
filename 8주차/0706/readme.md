@@ -22,3 +22,5 @@ innerhtml, innerText는 모든 자식의 특정값들을 가져와
     
     a
     123 123 a
+
+e.preventDefault(); = return false;
