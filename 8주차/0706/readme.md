@@ -24,3 +24,11 @@
           123 123 a
 
 - e.preventDefault(); = return false;
+
+- jquery AJAX
+
+              $.ajax({url: '',
+                    method: '',
+                    data: '',
+                    success: '',
+                    error: '' })
