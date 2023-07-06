@@ -32,3 +32,15 @@
                     data: '',
                     success: '',
                     error: '' })
+
+
+- ajax 설명
+
+           success: (responseData) => {
+            alert(responseData);
+          },
+          error: (jqXhr, status) => {
+            alert(`실패: ${status}\n오류명:${jqXhr.statusCode}`);
+          },
+
+  -error: 네트워크 오류 -> 다른 오류들이 발생해도 success로 갈 수도 있어!
