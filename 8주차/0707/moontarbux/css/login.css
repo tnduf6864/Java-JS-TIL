@@ -1,0 +1,22 @@
+/* name 속성값이 id인 요소 */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+div > a > img {
+    width : 45px;
+    height: 45px;
+}
+
+form.login > span{         
+    margin-left: 10px;
+}
+
+@media screen and (max-width:640px){
+    form.login > span{         
+        display: block;
+    }
+}

@@ -1,0 +1,149 @@
+* {
+  /* width의 크기가 컨텐트의 크기가 아니라 전체 크기를 의미! */
+  box-sizing: border-box;
+}
+
+/*header*/
+header {
+  height: 69px;
+  width: 100%;
+
+  position: fixed;
+
+  top: 0px;
+  left: 0px;
+
+  background-color: #f6f5ef;
+  border: 1px solid;
+
+  z-index: 1;
+}
+
+.logo {
+  height: 69px;
+  width: 69px;
+  float: left;
+}
+
+header > nav {
+  float: right;
+}
+
+header > nav > ul {
+  list-style-type: none;
+
+  font-size: 25px;
+  font-weight: bold;
+  /* font-family: "Gill Sans", sans-serif; */
+
+  word-spacing: 25px;
+  margin-top: 2%;
+  width: 100%;
+}
+
+header > nav > ul > li {
+  display: inline;
+
+  color: darkblue;
+  width: 25%;
+  padding-right: 20px;
+}
+
+header > nav > ul > li:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+header > nav > ul > li > a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+/*section*/
+section {
+  height: 500px;
+  width: 100%;
+  background-color: rgb(223, 223, 223);
+  border: 20px double;
+  border-color: rgb(180, 180, 180);
+  margin-top: 100px;
+}
+
+section > div {
+  background-color: gray;
+  padding: 5px;
+  height: 90%;
+  width: 80%;
+  float: left;
+  border: 0.5px solid;
+}
+
+section > div > article:first-child {
+  height: 65%;
+  width: 100%;
+  border: 0.5px solid;
+  background-color: rgb(255, 114, 114);
+
+  padding: 1%;
+}
+
+section > div > article:last-child {
+  height: 34%;
+  width: 100%;
+  border: 1px double;
+  background-color: rgb(255, 159, 114);
+
+  margin-top: 0.25%;
+  padding: 1%;
+}
+
+section > aside {
+  height: 90%;
+  width: 20%;
+  float: right;
+  background-color: skyblue;
+  border: 1px solid;
+
+  text-align: center;
+}
+
+section > aside > ul {
+  list-style: square;
+}
+
+section > aside > ul > li {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/*footer*/
+footer {
+  background-color: #2c2a29;
+  color: #fff;
+  padding: 2%;
+}
+
+footer > ul {
+  width: 50%;
+  padding-top: 2%;
+  padding-left: 0;
+  margin: 0 auto;
+
+  list-style: none;
+}
+
+footer > span {
+  display: inline-block;
+  margin-top: 50px;
+  width: 60%;
+  border: 1px solid;
+
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}

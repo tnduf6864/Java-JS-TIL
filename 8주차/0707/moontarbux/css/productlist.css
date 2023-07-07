@@ -1,0 +1,48 @@
+section {
+  background-color: rgb(27, 7, 163) !important;
+}
+
+div.productlist {
+  width: 100%;
+  overflow: auto;
+
+  padding-bottom: 80px;
+}
+
+div.productlist > div.product {
+  display: inline;
+  width: 20%;
+  float: left;
+}
+
+div.productlist > div.product > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 80%;
+  list-style-type: none;
+  padding: 10px;
+}
+
+div.productlist > div.product > ul > li > img {
+  width: 250px;
+  height: 250px;
+}
+
+div.productlist > div.product > ul > li > span {
+  display: block;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 25px;
+
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.click {
+  width: 80%;
+  height: 80%;
+  transition: all 1s;
+}

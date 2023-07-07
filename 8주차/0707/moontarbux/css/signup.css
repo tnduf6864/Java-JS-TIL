@@ -1,0 +1,16 @@
+form > label {
+  display: block;
+}
+
+form.login {
+  width: 50%;
+  padding: 10px;
+}
+
+form > button.btn {
+  width: 100%;
+}
+
+form > button.joinBtn {
+  display: none;
+}

@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+div.product_view {
+  width: 100%
+}
+
+div.product_view_pic > img {
+  width: 200px;
+  height: 100px;
+  float: left;
+}
+
+div.product_view_detail {
+  width: 50%;
+  float: right;
+}

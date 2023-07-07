@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <title>로그인</title>
+    <script src="../js/login.js"></script>
+  </head>
+
+  <body>
+    <form
+      class="login"
+      method="post"
+      action="layout.html"
+      style="margin-top: 10px"
+    >
+      <div style="width: 50%">
+        <div class="form-floating mb-3">
+          <input
+            name="id"
+            id="inputID"
+            class="form-control"
+            placeholder="아이디"
+          />
+          <label for="floatingInput" for="id">아이디</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            name="pwd"
+            id="pwd"
+            class="form-control"
+            placeholder="비밀번호"
+          />
+          <label for="floatingPassword">비밀번호</label>
+        </div>
+      </div>
+
+      <span><input type="checkbox" checked /> 아이디 저장</span>
+      <span><input type="checkbox" checked /> 비밀번호 저장</span>
+      <span><input type="checkbox" /> 자동 로그인</span> <br /><br />
+
+      <!-- TODO -->
+      <button type="submit" class="btn btn-primary">로그인</button>
+      <a href="layout.html">
+        <button type="button" class="btn btn-dark">돌아가기</button>
+      </a>
+    </form>
+  </body>
+</html>
