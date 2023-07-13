@@ -1,1 +1,3 @@
-JSP는 뷰어만 해
+- JSP는 뷰어만 해
+- JSP에서 Scripting Element를 사용하는 것을 지양하세요!
+  - ->Expression Language (EL)ㄹ
